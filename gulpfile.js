@@ -21,8 +21,8 @@ gulp.task('js', function() {
 });
 
 gulp.task('icons', function() {
-    return gulp.src(config.bowerDir + '/materialize/font/material-design-icons/') 
-        .pipe(gulp.dest('./public/fonts')); 
+    return gulp.src(config.bowerDir + '/materialize/font/material-design-icons/*') 
+        .pipe(gulp.dest('./public/font/material-design-icons')); 
 });
 
 gulp.task('css', function() {
