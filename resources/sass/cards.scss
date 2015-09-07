@@ -6,4 +6,7 @@
     &:hover{
         @extend .z-depth-2;
     }
+    .card-image img{
+        height: 400px;
+    }
 }

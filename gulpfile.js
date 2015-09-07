@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
-    notify = require('gulp-notify'),
+    util = require('gulp-util'),
     connect = require('gulp-connect'),
     bower = require('gulp-bower');
 
@@ -35,9 +35,7 @@ gulp.task('css', function() {
                 config.bowerDir + '/materialize/sass'
             ]
         })
-        .on('error', notify.onError(function(error) {
-            return 'Error: ' + error.message;
-        }))
+        .on('error', util.log)
         .pipe(gulp.dest('./public/css'))
         .pipe(connect.reload());
 });
@@ -61,5 +59,5 @@ gulp.task('watch', function() {
     gulp.watch(config.htmlSources, ['html']);
 });
 
-  
+
 gulp.task('default', ['html', 'connect', 'watch', 'bower', 'icons', 'css', 'js']);
