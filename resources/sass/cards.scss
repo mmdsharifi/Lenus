@@ -1,0 +1,9 @@
+.ca-link{
+    font-size: 1.2rem !important;
+}
+.card{
+    transition: all .3s;
+    &:hover{
+        @extend .z-depth-2;
+    }
+}

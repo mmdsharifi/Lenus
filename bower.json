@@ -9,7 +9,6 @@
     "test"
   ],
   "dependencies": {
-    "font-Iranian": "https://github.com/font-store/font-Iranian",
     "materialize": "*"
   }
 }
