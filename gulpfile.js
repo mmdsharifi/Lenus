@@ -19,12 +19,12 @@ gulp.task('js', function() {
     return gulp.src([config.bowerDir + '/materialize/dist/js/materialize.min.js',
             config.bowerDir + '/jquery/dist/jquery.min.js'
         ])
-        .pipe(gulp.dest('./public/js')); 
+        .pipe(gulp.dest('./public/js'));
 });
 
 gulp.task('icons', function() {
-    return gulp.src(config.bowerDir + '/materialize/font/material-design-icons/*') 
-        .pipe(gulp.dest('./public/font/material-design-icons')); 
+    return gulp.src(config.bowerDir + '/materialize/font/material-design-icons/*')
+        .pipe(gulp.dest('./public/font/material-design-icons'));
 });
 
 gulp.task('css', function() {
@@ -53,7 +53,7 @@ gulp.task('html', function() {
 });
 
 // Rerun the task when a file changes
- 
+
 gulp.task('watch', function() {
     gulp.watch(config.sassPath + '/**/*.scss', ['css']);
     gulp.watch(config.htmlSources, ['html']);

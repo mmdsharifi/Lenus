@@ -1,18 +1,29 @@
-body{
+body {
     background-color: $body-bg-color;
-    .wrapper{
+    .wrapper {
         padding-left: 15px;
         padding-right: 15px;
     }
+    .row .col{
+        float: right !important;
+    }
+    nav .brand-logo{
+        position: inherit;
+        font-size: 1.1rem ;
+        float:left;
+    }
 }
-.primary-text{
+.primary-text {
     @extend .grey-text , .text-darken-4;
 }
-.secondary-text{
-    color : #727272;
+.ca-link{
+    color:#fff !important;
+}
+.secondary-text {
+    color: #727272;
 }
 .waves-effect.waves-pinck .waves-ripple {
-     /* The alpha value allows the text and background color
+    /* The alpha value allows the text and background color
      of the button to still show through. */
-      background-color: lighten($card-link-color,25%);
-    }
+    background-color: lighten($card-link-color,25%);
+}
