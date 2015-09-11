@@ -7,7 +7,7 @@ $primary-color-dark: darken($primary-color, 15%) !default;
 $secondary-color: color("teal", "lighten-1") !default;
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
-$link-color: color("light-blue", "darken-1") !default;
+$link-color: color("grey", "darken-4") !default;
 
 
 /*** Badges ***/
@@ -26,7 +26,7 @@ $button-large-icon-font-size: 1.6rem !default;
 $button-line-height: 36px !default;
 
 /*** Cards ***/
-$card-padding: 20px !default;
+$card-padding: 30px !default;
 $card-bg-color: #fff !default;
 $card-link-color: #ff5722  !default;
 $card-link-color-light: darken($card-link-color, 7%) !default;
@@ -128,12 +128,12 @@ $toast-text-color: #fff !default;
 /*** Typography ***/
 $off-black: rgba(0, 0, 0, 0.87) !default;
 // Header Styles
-$h1-fontsize: 4.2rem !default;
-$h2-fontsize: 3.56rem !default;
-$h3-fontsize: 2.92rem !default;
-$h4-fontsize: 2.28rem !default;
-$h5-fontsize: 1.64rem !default;
-$h6-fontsize: 1rem !default;
+$h1-fontsize: 2.88em !default;
+$h2-fontsize: 2.44em !default;
+$h3-fontsize: 2.11em !default;
+$h4-fontsize: 1.76em !default;
+$h5-fontsize: 1.42em !default;
+$h6-fontsize: 1.22em !default;
 
 // Footer
 $footer-bg-color: $primary-color !default;
