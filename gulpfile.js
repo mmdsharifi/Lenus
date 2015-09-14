@@ -2,7 +2,13 @@ var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
     util = require('gulp-util'),
     connect = require('gulp-connect'),
+    concat = require('gulp-concat'),
+    uglify = require('gulp-uglify'),
+    size = require('gulp-size'),
+    uncss = require('gulp-uncss'),
+    minifyCss = require('gulp-minify-css'),
     bower = require('gulp-bower');
+
 
 var config = {
     sassPath: './resources/sass',
@@ -15,10 +21,18 @@ gulp.task('bower', function() {
         .pipe(gulp.dest(config.bowerDir))
 });
 
+// first load all required js files
+// concat them in to  script.min.js
+// and minify it.
 gulp.task('js', function() {
-    return gulp.src([config.bowerDir + '/materialize/dist/js/materialize.min.js',
-            config.bowerDir + '/jquery/dist/jquery.min.js'
+    return gulp.src([
+            config.bowerDir + '/jquery/dist/jquery.min.js',
+            config.bowerDir + '/materialize/dist/js/materialize.min.js',
+            './resources/js/app.js'
         ])
+        .pipe(concat('script.min.js'))
+        .pipe(uglify())
+        .pipe(size())
         .pipe(gulp.dest('./public/js'));
 });
 
@@ -36,6 +50,22 @@ gulp.task('css', function() {
             ]
         })
         .on('error', util.log)
+        .pipe(size())
+        .pipe(uncss({
+            html: ['./index.html', './posts.html'],
+            timeout : 2000,
+              ignore: [
+                ".waves-ripple ",
+                ".drag-target",
+                "#sidenav-overlay",
+                ".waves-effect",
+                ".waves-effect .waves-ripple",
+                ".waves-effect.waves-pinck .waves-ripple",
+                ".waves-block.waves-light"
+           ]
+        }))
+        .pipe(minifyCss())
+        .pipe(size())
         .pipe(gulp.dest('./public/css'))
         .pipe(connect.reload());
 });

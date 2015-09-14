@@ -1,12 +1,29 @@
-.ca-link{
+.ca-link {
     font-size: 1.2rem !important;
 }
-.card{
-    transition: all .3s;
-    &:hover{
-        @extend .z-depth-2;
+.card {
+    .card-action {
+        padding: 0 !important;
+        padding-right: 30px !important;
+        a {
+            @media #{$small-and-down}{
+                width: 91%;
+            }
+        }
     }
-    .card-image img{
+    .card-image img {
         height: 400px;
+    }
+    .card-content{
+
+    }
+}
+@media #{$small-and-down}{
+    text-align: center;
+    .s12{
+        //@extend .center;
+    }
+    .center-sm {
+        text-align: center;
     }
 }
