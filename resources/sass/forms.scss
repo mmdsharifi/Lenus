@@ -1,3 +1,22 @@
 select:focus {
-  outline: 1px solid #eee;
+    outline: 1px solid #eee;
+}
+.input-field input[type=search] {
+    padding-right: 1.4em;
+}
+
+// Style Placeholders
+::-webkit-input-placeholder {
+    color: #ffe;
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #ffe;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #ffe;
+}
+:-ms-input-placeholder {
+    color: #ffe;
 }

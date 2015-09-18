@@ -1,7 +1,15 @@
 @font-face {
 	font-family: 'WMitra';
-	src: url('../font/MitraWeb-Regular.woff') format('woff');
+	src: url('../font/BMitra-Regular.eot');
+	src: local('BMitra-Regular'), url('../font/BMitra-Regular.woff') format('woff'), url('../font/BMitra-Regular.ttf') format('truetype');
 	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'WMitra';
+	src: url('../font/BMitra-Bold.eot');
+	src: local('BMitra-Bold'), url('../font/BMitra-Bold.woff') format('woff'), url('../font/BMitra-Bold.ttf') format('truetype');
+	font-weight: bold;
 	font-style: normal;
 }
 

@@ -2,10 +2,19 @@
     font-size: 1.2rem !important;
 }
 .card {
+    .share-area{
+        h6{
+            margin: 0 0 15px 0;
+        }
+    }
+    .related-post{
+        h6{
+            margin: 0;
+        }
+    }
     .card-action {
-        padding: 0 !important;
-        padding-right: 30px !important;
         a {
+            margin-right: 0 !important;
             @media #{$small-and-down}{
                 width: 91%;
             }

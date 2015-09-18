@@ -1,9 +1,5 @@
 body {
     background-color: $body-bg-color;
-    .wrapper {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
     .row .col {
         float: right !important;
     }
@@ -25,7 +21,7 @@ body {
             }
         }
     }
-    @media #{$small-and-down}{
+    @media #{$small-and-down} {
         font-size: 1.1em;
     }
 }
@@ -41,19 +37,22 @@ body {
 .waves-effect.waves-pinck .waves-ripple {
     background-color: lighten($card-link-color,25%);
 }
+
 //
-img{
+img {
     @extend .activator, .responsive-img;
 }
+
 //
 @media #{$small-and-down} {
-    h1{
+    h1 {
         font-size: 2.2em;
     }
-    h4{
+    h4 {
         font-size: 1em;
     }
-    h5{
+    h5 {
         font-size: 1.2em;
     }
 }
+/**/

@@ -61,7 +61,8 @@ gulp.task('css', function() {
                 ".waves-effect",
                 ".waves-effect .waves-ripple",
                 ".waves-effect.waves-pinck .waves-ripple",
-                ".waves-block.waves-light"
+                ".waves-block.waves-light",
+                ".chip"
            ]
         }))
         .pipe(minifyCss())
