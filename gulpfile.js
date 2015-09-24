@@ -61,13 +61,12 @@ gulp.task('css', function() {
                 ".waves-effect",
                 ".waves-effect .waves-ripple",
                 ".waves-effect.waves-pinck .waves-ripple",
-                ".waves-block.waves-light",
-                ".chip"
+                ".waves-block.waves-light"
            ]
         }))
         .pipe(minifyCss())
         .pipe(size())
-        .pipe(gulp.dest('./public/css'))
+        .pipe(gulp.dest('./'))
         .pipe(connect.reload());
 });
 
