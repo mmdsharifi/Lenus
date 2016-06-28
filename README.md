@@ -1,16 +1,13 @@
-# gulp-bootstrap-sass
+# Lenus
+A material design blog template : demo [lenus.org](www.lenus.org)
 
-<p dir="rtl">
-برای نصب وابستگی های پروژه باید ند جی اس و گالپ را روی کامپیوتر خود نصب کرده باشید.
-‍‍‍سپس دستور زیرا در مسیر پروژه در کامندلاین وارد کنید:
-</p>
-‍‍```
-sudo npm install
-```
-or in Windows Run Commandline as Admin
+## How to use ?
+install dependencies with `npm install`
 
-<p dir="rtl">
-سپس دستور
-‍‍‍‍    `gulp`
-را بزنید.
-</p>
+## Things I use in this project :
+
+- [Materialize CSS Framework](https://www.materializecss.com/)
+- [GulpJS](http://www.gulpjs.com)
+- [npm](http://www.npmjs.com)
+- [Bower](https://www.bower.io)
+- [Material Design Guidelines](https://www.google.com/design/spec/material-design/introduction.html)
