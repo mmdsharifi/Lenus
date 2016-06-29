@@ -25,4 +25,4 @@ install dependencies with `npm install`
 
 ## Contribution
 
-fork this repo and send your PR on a branch. thanks in advance :)
+fork this repo and send your PR on a branch OR open an issue. thanks in advance :)
